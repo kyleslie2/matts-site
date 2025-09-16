@@ -39,7 +39,6 @@ export default async function Home() {
 						className="rounded"
 						height={1450}
 						width={1450}
-						// src="https://res.cloudinary.com/kyleslie2/image/upload/v1731949515/signal-2024-11-16-092821_vxlpz7_c_crop_w_1240_h_930_ar_4_3_ygi3ta.webp"
 						src="https://res.cloudinary.com/kyleslie2/image/upload/v1758053778/5844cb275752fcb7489c824c9c1ea8c9_zodvuc.jpg"
 						style={{
 							objectFit: "cover",
@@ -51,6 +50,28 @@ export default async function Home() {
 			</section>
 
 			{/* <ProductList products={products} /> */}
+
+			<section className="w-full py-8">
+				<div className="grid max-w-none grid-cols-1 items-center justify-items-center gap-8 md:grid-cols-2">
+					<div className="flex justify-center w-full">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2814.3455983818976!2d-76.14730812367571!3d45.139595155038286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x664c69590f7779ad%3A0xb66c7196d6e7752b!2sGT%20Games!5e0!3m2!1sen!2sca!4v1758063365616!5m2!1sen!2sca"
+							className="w-full h-64 sm:h-96 rounded"
+							style={{ border: 0 }}
+							allowFullScreen
+							loading="lazy"
+							referrerPolicy="no-referrer-when-downgrade"
+							title="Google Map"
+						/>
+					</div>
+					<div className="w-full">
+						<h3 className="text-2xl font-semibold mb-4">Lorem Ipsum</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, eget facilisis quam felis id mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Etiam ac mauris vitae urna fermentum tincidunt.
+						</p>
+					</div>
+				</div>
+			</section>
 
 			<section className="w-full py-8">
 				<div className="grid gap-8 lg:grid-cols-2">

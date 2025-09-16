@@ -15,6 +15,40 @@ sdfasfd
 asdfasdf
 `,
 	},
+	"/contact": {
+		content: `
+# Contact
+<div>
+  <ul className="space-y-2 text-teal-900">
+    <li>
+      <span className="font-semibold">Email: </span>
+      <a
+        href="mailto:mhoule99@gmail.com"
+        className="underline underline-offset-4 hover:text-amber-600"
+      >
+        mhoule99@gmail.com
+      </a>
+    </li>
+    <li>
+      <span className="font-semibold">Facebook: </span>
+      <a
+        href="https://www.facebook.com/groups/OGwarmachineclub"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline underline-offset-4 hover:text-amber-600"
+      >
+        facebook.com/groups/OGwarmachineclub
+      </a>
+    </li>
+  </ul>
+</div>
+`,
+	},
+	"/hotels": {
+		content: `
+# Hotels
+Hotel info .....
+`},
 };
 
 export default async function Page(props: { params: Promise<{ segments?: string[] }> }) {
