@@ -31,7 +31,7 @@
 	"Global.deliveryEstimates.month": "{count, plural, =1 {# month} other {# months}}",
 	"Global.deliveryEstimates.week": "{count, plural, =1 {# week} other {# weeks}}",
 	"Global.actions.shopNow": "Buy my art",
-	"/.hero.title": "Warmachine Tournament Name",
+	"/.hero.title": "The Maple Melee",
 	"/.hero.description": "Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! ",
 	"/.hero.action": "Buy tickets!",
 	"/.hero.link": "/product/st-james-woods",
