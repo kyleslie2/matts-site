@@ -33,7 +33,7 @@ export default async function Home() {
 						</YnsLink>
 					</div>
 					<Image
-						alt="Alicia Hofland at the Itsy Bitsy Art Show"
+						alt="Tournament poster"
 						loading="eager"
 						priority={true}
 						className="rounded"
@@ -50,7 +50,7 @@ export default async function Home() {
 				</div>
 			</section>
 
-			<ProductList products={products} />
+			{/* <ProductList products={products} /> */}
 
 			<section className="w-full py-8">
 				<div className="grid gap-8 lg:grid-cols-2">

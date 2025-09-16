@@ -22,19 +22,19 @@ const sections = [
 		],
 	},
 	{
-		header: "Connect with me",
+		header: "Connect with us",
 		links: [
 			{
-				label: "Instagram",
-				href: "https://instagram.com/aliciahofland.art",
+				label: "More Information",
+				href: "https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing",
 			},
 			{
 				label: "Facebook",
-				href: "https://facebook.com/aliciahofland.art",
+				href: "https://www.facebook.com/groups/OGwarmachineclub",
 			},
 			{
 				label: "Email",
-				href: "mailto:aliciahofland@gmail.com",
+				href: "mailto:mhoule99@gmail.com",
 			},
 		],
 	},

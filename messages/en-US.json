@@ -1,5 +1,5 @@
 {
-	"Global.metadata.title": "War Machines Tournament Title",
+	"Global.metadata.title": "Warmachine Tournament Title",
 	"Global.metadata.description": "Tagline/ description",
 	"Global.notFound.title": "Not found",
 	"Global.notFound.description": "The page you were looking for does not exist.",
@@ -32,7 +32,7 @@
 	"Global.deliveryEstimates.week": "{count, plural, =1 {# week} other {# weeks}}",
 	"Global.actions.shopNow": "Buy my art",
 	"/.hero.title": "Warmachine Tournament Name",
-	"/.hero.description": "Tournament Info and description!.",
+	"/.hero.description": "Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! ",
 	"/.hero.action": "Buy tickets!",
 	"/.hero.link": "/product/st-james-woods",
 	"/search.notFound.title": "No Results Found for \"{query}\"",
