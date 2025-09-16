@@ -4,9 +4,9 @@ import { getTranslations } from "@/i18n/server";
 import PrintsImage from "@/images/prints.jpg";
 import SeasonalImage from "@/images/seasonal.jpg";
 import { CategoryBox } from "@/ui/category-box";
-import { ProductList } from "@/ui/products/product-list";
+// import { ProductList } from "@/ui/products/product-list";
 import { YnsLink } from "@/ui/yns-link";
-import * as Commerce from "commerce-kit";
+// import * as Commerce from "commerce-kit";
 import Image from "next/image";
 import type { Metadata } from "next/types";
 
@@ -15,7 +15,7 @@ export const metadata = {
 } satisfies Metadata;
 
 export default async function Home() {
-	const products = await Commerce.productBrowse({ first: 6 });
+	// const products = await Commerce.productBrowse({ first: 6 });
 	const t = await getTranslations("/");
 
 	return (
