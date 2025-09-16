@@ -34,7 +34,7 @@ export default async function Home() {
 						height={1450}
 						width={1450}
 						// src="https://res.cloudinary.com/kyleslie2/image/upload/v1731949515/signal-2024-11-16-092821_vxlpz7_c_crop_w_1240_h_930_ar_4_3_ygi3ta.webp"
-						src="https://res.cloudinary.com/kyleslie2/image/upload/v1733446167/alicia-teal_h6qza2.png"
+						src="/src/images/warmachines-placeholder.webp"
 						style={{
 							objectFit: "cover",
 						}}

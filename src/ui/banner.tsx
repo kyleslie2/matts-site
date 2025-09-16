@@ -15,14 +15,14 @@ export const Banner = () => {
 				<div className="mx-auto flex max-w-7xl items-center justify-between gap-x-4">
 					<div className="flex items-center gap-x-4">
 						<p className="text-center text-sm font-medium">
-							🎉 Welcome to the launch of aliciahofland.art! 🎉
+							🎉 Buy tickets for our next tournament! 🎉
 						</p>
 						<YnsLink
 							href="/category/seasonal"
 							className="lg:flex-none md:flex-none sm:flex-auto sm:text-pretty rounded-full bg-amber-300 px-3 py-1 text-sm font-semibold text-teal-900 shadow-sm hover:bg-amber-500 text-center"
 							// className="flex-none rounded-full bg-indigo-500 px-3 py-1 text-sm font-semibold text-white shadow-sm hover:bg-indigo-600"
 						>
-							Check out my Holiday Items
+							Buy tickets!
 						</YnsLink>
 					</div>
 				</div>

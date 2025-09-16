@@ -45,7 +45,7 @@ export default async function Image(props: { params: Promise<{ slug: string }> }
 			</div>
 			<div tw="flex-1 flex flex-col items-center justify-center border-l border-amber-600">
 				<div tw="w-full mt-8 text-left px-16 font-normal text-4xl">
-					{accountResult?.account?.business_profile?.name ?? "Alicia Hofland"}
+					{accountResult?.account?.business_profile?.name ?? "War Machines"}
 				</div>
 				<div tw="flex-1 -mt-8 flex flex-col items-start justify-center px-16">
 					<p tw="font-black text-5xl mb-0">{product.name}</p>
