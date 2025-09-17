@@ -65,10 +65,15 @@ export default async function Home() {
 						/>
 					</div>
 					<div className="w-full">
-						<h3 className="text-2xl font-semibold mb-4">Lorem Ipsum</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, eget facilisis quam felis id mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Etiam ac mauris vitae urna fermentum tincidunt.
-						</p>
+						<div className="flex flex-col items-center justify-center text-center h-full w-full">
+							<h3 className="text-4xl font-semibold mb-4">Date of the event</h3>
+							<h4 className="text-3xl font-semibold mb-4">Event address</h4>
+							<p>Address info</p>
+							<h5 className="text-2xl font-semibold mb-4">Other info</h5>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, eget facilisis quam felis id mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Etiam ac mauris vitae urna fermentum tincidunt.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>

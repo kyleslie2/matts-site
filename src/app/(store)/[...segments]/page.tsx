@@ -9,7 +9,7 @@ const pages: Record<string, { content: string }> = {
 
 This is the About page.
 
-- is this *markdown*?
+is this *markdown*?
 asdfafd
 sdfasfd
 asdfasdf
@@ -19,27 +19,25 @@ asdfasdf
 		content: `
 # Contact
 <div>
-  <ul className="space-y-2 text-teal-900">
-    <li>
-      <span className="font-semibold">Email: </span>
-      <a
-        href="mailto:mhoule99@gmail.com"
-        className="underline underline-offset-4 hover:text-amber-600"
-      >
-        mhoule99@gmail.com
-      </a>
-    </li>
-    <li>
-      <span className="font-semibold">Facebook: </span>
-      <a
-        href="https://www.facebook.com/groups/OGwarmachineclub"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="underline underline-offset-4 hover:text-amber-600"
-      >
-        facebook.com/groups/OGwarmachineclub
-      </a>
-    </li>
+  <ul className="space-y-2 text-teal-900 list-none pl-0">
+	<li>
+	  <a
+		href="mailto:mhoule99@gmail.com"
+		className="underline underline-offset-4 hover:text-amber-600"
+	  >
+		Ask a question
+	  </a>
+	</li>
+	<li>
+	  <a
+		href="https://www.facebook.com/groups/OGwarmachineclub"
+		target="_blank"
+		rel="noopener noreferrer"
+		className="underline underline-offset-4 hover:text-amber-600"
+	  >
+		OGwarmachineclub Facebook group
+	  </a>
+	</li>
   </ul>
 </div>
 `,

@@ -5,7 +5,7 @@ import { YnsLink } from "@/ui/yns-link";
 
 const sections = [
 	{
-		header: "Art you can buy",
+		header: "Other information",
 		links: [
 			// {
 			// 	label: "Originals",

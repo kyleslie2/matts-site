@@ -11,12 +11,12 @@ const links = [
 	// 	href: "/category/originals",
 	// },
 	{
-		label: "Prints",
-		href: "/category/prints",
+		label: "Register",
+		href: "https://example.com",
 	},
 	{
-		label: "Seasonal",
-		href: "/category/seasonal",
+		label: "Tickets",
+		href: "/product/hide-and-seek",
 	},
 	{
 		label: "Contact",
