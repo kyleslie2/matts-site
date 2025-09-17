@@ -2,10 +2,10 @@ import { NavMobileMenu } from "@/ui/nav/nav-mobile-menu.client";
 import Link from "next/link";
 
 const links = [
-	{
-		label: "Home",
-		href: "/",
-	},
+	// {
+	// 	label: "Home",
+	// 	href: "/",
+	// },
 	// {
 	// 	label: "Originals",
 	// 	href: "/category/originals",
@@ -19,8 +19,16 @@ const links = [
 		href: "/category/seasonal",
 	},
 	{
-		label: "Instagram",
-		href: "https://instagram.com/aliciahofland.art",
+		label: "Contact",
+		href: "/contact",
+	},
+	{
+		label: "Hotels",
+		href: "/hotels",
+	},
+	{
+		label: "More info",
+		href: "https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing",
 	},
 ];
 

@@ -34,7 +34,7 @@ export default async function Home() {
 						height={1450}
 						width={1450}
 						// src="https://res.cloudinary.com/kyleslie2/image/upload/v1731949515/signal-2024-11-16-092821_vxlpz7_c_crop_w_1240_h_930_ar_4_3_ygi3ta.webp"
-						src="/src/images/warmachines-placeholder.webp"
+						src="https://res.cloudinary.com/kyleslie2/image/upload/c_fill,g_auto,h_250,w_970/b_rgb:000000,e_gradient_fade,y_-0.50/c_scale,co_rgb:ffffff,fl_relative,l_text:montserrat_25_style_light_align_center:Shop%20Now,w_0.5,y_0.18/v1757985839/warmachine-placeholder_swcq2f.webp"
 						style={{
 							objectFit: "cover",
 						}}
