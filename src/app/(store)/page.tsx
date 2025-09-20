@@ -1,7 +1,7 @@
 import { publicUrl } from "@/env.mjs";
 import { getTranslations } from "@/i18n/server";
 // import OriginalsImage from "@/images/originals.jpg";
-import PrintsImage from "@/images/prints.jpg";
+import TicketsImage from "@/images/prints.jpg";
 import SeasonalImage from "@/images/seasonal.jpg";
 import { CategoryBox } from "@/ui/category-box";
 // import { ProductList } from "@/ui/products/product-list";
@@ -55,7 +55,7 @@ export default async function Home() {
 				<div className="grid max-w-none grid-cols-1 items-center justify-items-center gap-8 md:grid-cols-2">
 					<div className="flex justify-center w-full">
 						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2814.3455983818976!2d-76.14730812367571!3d45.139595155038286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x664c69590f7779ad%3A0xb66c7196d6e7752b!2sGT%20Games!5e0!3m2!1sen!2sca!4v1758063365616!5m2!1sen!2sca"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.4691689397177!2d-75.59922762366243!3d45.42004293638374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0fb291d59f99%3A0x8a6aaa7a261c3775!2s1700%20Blair%20Rd%2C%20Ottawa%2C%20ON%20K1B%204E6!5e0!3m2!1sen!2sca!4v1758408386653!5m2!1sen!2sca"
 							className="w-full h-64 sm:h-96 rounded"
 							style={{ border: 0 }}
 							allowFullScreen
@@ -66,13 +66,14 @@ export default async function Home() {
 					</div>
 					<div className="w-full">
 						<div className="flex flex-col items-center justify-center text-center h-full w-full">
-							<h3 className="text-4xl font-semibold mb-4">Date of the event</h3>
-							<h4 className="text-3xl font-semibold mb-4">Event address</h4>
-							<p>Address info</p>
-							<h5 className="text-2xl font-semibold mb-4">Other info</h5>
+							<h3 className="text-4xl font-semibold mb-4">January 17-18, 2026</h3>
+							<h4 className="text-3xl font-semibold mb-4">1700 Blair Rd, Gloucester, ON K1B 4E6</h4>
+							<p>We’re excited to announce our inaugural Maple Melee warmachine event happening Saturday Jan 17th through Sunday January 18th 2026! Saturday will consist of 100 point Steamroller pods that will cut to a Top 8 on Sunday. Sunday will host the Finals as well as a separate steamroller and alternative event for those not playing in the Finals. We will cap at 32 players.</p>
+							<h5 className="text-2xl font-semibold mb-4">More info</h5>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, eget facilisis quam felis id mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Etiam ac mauris vitae urna fermentum tincidunt.
+								For more details please see our tournament pack via the google link below:
 							</p>
+							<a href="https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing">Google doc</a>
 						</div>
 					</div>
 				</div>
@@ -82,7 +83,7 @@ export default async function Home() {
 				<div className="grid gap-8 lg:grid-cols-2">
 					{[
 						// { categorySlug: "originals", src: OriginalsImage },
-						{ categorySlug: "prints", src: PrintsImage },
+						{ categorySlug: "tickets", src: TicketsImage },
 						{ categorySlug: "seasonal", src: SeasonalImage },
 					].map(({ categorySlug, src }) => (
 						<CategoryBox key={categorySlug} categorySlug={categorySlug} src={src} />

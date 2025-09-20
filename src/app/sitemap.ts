@@ -4,7 +4,7 @@ import type { MetadataRoute } from "next";
 
 const Categories = [
 	// { name: "Orignals", slug: "originals" },
-	{ name: "Prints", slug: "prints" },
+	{ name: "Tickets", slug: "tickets" },
 	{ name: "Seasonal", slug: "seasonal" },
 ];
 

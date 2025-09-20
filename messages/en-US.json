@@ -32,7 +32,7 @@
 	"Global.deliveryEstimates.week": "{count, plural, =1 {# week} other {# weeks}}",
 	"Global.actions.shopNow": "Puchase ticket here!",
 	"/.hero.title": "The Maple Melee",
-	"/.hero.description": "Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! Tournament Info and description! ",
+	"/.hero.description": "January 17-18, 2026",
 	"/.hero.action": "Purchase ticke here",
 	"/.hero.link": "/product/st-james-woods",
 	"/search.notFound.title": "No Results Found for \"{query}\"",

@@ -12,8 +12,8 @@ const sections = [
 			// 	href: "/category/originals",
 			// },
 			{
-				label: "Prints",
-				href: "/category/prints",
+				label: "Tickets",
+				href: "/category/tickets",
 			},
 			{
 				label: "Seasonal",
