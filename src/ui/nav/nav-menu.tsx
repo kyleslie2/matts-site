@@ -16,7 +16,7 @@ const links = [
 	},
 	{
 		label: "Tickets",
-		href: "/product/hide-and-seek",
+		href: "/product/weekend-pass",
 	},
 	{
 		label: "Contact",
@@ -28,7 +28,7 @@ const links = [
 	},
 	{
 		label: "More info",
-		href: "https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing",
+		href: "/info",
 	},
 ];
 

@@ -86,6 +86,21 @@ Pending
 # Hotels
 Hotel info .....
 `},
+	"/info": {
+			content: `
+	# More info
+ 
+	<iframe
+		src="https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing&embedded=true"
+		width="800"
+		height="1000"
+		frameBorder={0}
+		marginHeight={0}
+		marginWidth={0}
+	>
+		Loading…
+	</iframe>
+`},
 };
 
 export default async function Page(props: { params: Promise<{ segments?: string[] }> }) {
