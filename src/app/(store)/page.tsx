@@ -1,7 +1,7 @@
 import { publicUrl } from "@/env.mjs";
 import { getTranslations } from "@/i18n/server";
 // import OriginalsImage from "@/images/originals.jpg";
-import TicketsImage from "@/images/prints.jpg";
+import TicketsImage from "@/images/weekend.jpg";
 import SeasonalImage from "@/images/seasonal.jpg";
 import { CategoryBox } from "@/ui/category-box";
 // import { ProductList } from "@/ui/products/product-list";
@@ -22,6 +22,20 @@ export default async function Home() {
 		<main>
 			<section className="rounded bg-teal-900 pt-8">
 				<div className="mx-auto grid grid-cols-1 items-center justify-items-center gap-8 px-8 sm:px-16 md:grid-cols-2">
+					<Image
+						alt="Tournament poster"
+						loading="eager"
+						priority={true}
+						className="rounded"
+						height={1450}
+						width={1450}
+						src="https://res.cloudinary.com/kyleslie2/image/upload/v1758752679/Maple_Melee_Logo_lripoy.png"
+						style={{
+							objectFit: "cover",
+							paddingBottom: "2rem",
+						}}
+						sizes="(max-width: 1200px) 90vw, 950px"
+					/>
 					<div className="max-w-md space-y-4">
 						<h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl text-amber-100">{t("hero.title")}</h2>
 						<p className="text-pretty text-amber-100">{t("hero.description")}</p>
@@ -32,20 +46,6 @@ export default async function Home() {
 							{t("hero.action")}
 						</YnsLink>
 					</div>
-					<Image
-						alt="Tournament poster"
-						loading="eager"
-						priority={true}
-						className="rounded"
-						height={1450}
-						width={1450}
-						src="https://res.cloudinary.com/kyleslie2/image/upload/v1758053778/5844cb275752fcb7489c824c9c1ea8c9_zodvuc.jpg"
-						style={{
-							objectFit: "cover",
-							paddingBottom: "2rem",
-						}}
-						sizes="(max-width: 1200px) 90vw, 950px"
-					/>
 				</div>
 			</section>
 
