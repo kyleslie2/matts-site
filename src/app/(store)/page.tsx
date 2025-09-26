@@ -2,7 +2,8 @@ import { publicUrl } from "@/env.mjs";
 import { getTranslations } from "@/i18n/server";
 // import OriginalsImage from "@/images/originals.jpg";
 import TicketsImage from "@/images/weekend.jpg";
-import SeasonalImage from "@/images/seasonal.jpg";
+import RegistrationImage from "@/images/registration.png";
+import Logo from "@/images/MapleMeleeLogo.svg";
 import { CategoryBox } from "@/ui/category-box";
 // import { ProductList } from "@/ui/products/product-list";
 import { YnsLink } from "@/ui/yns-link";
@@ -29,7 +30,8 @@ export default async function Home() {
 						className="rounded"
 						height={1450}
 						width={1450}
-						src="https://res.cloudinary.com/kyleslie2/image/upload/v1758752679/Maple_Melee_Logo_lripoy.png"
+						// src="https://res.cloudinary.com/kyleslie2/image/upload/v1758752679/Maple_Melee_Logo_lripoy.png"
+						src={Logo}
 						style={{
 							objectFit: "cover",
 							paddingBottom: "2rem",
@@ -83,8 +85,8 @@ export default async function Home() {
 				<div className="grid gap-8 lg:grid-cols-2">
 					{[
 						// { categorySlug: "originals", src: OriginalsImage },
-						{ categorySlug: "tickets", src: TicketsImage },
-						{ categorySlug: "seasonal", src: SeasonalImage },
+						{ categorySlug: "sign-up", src: TicketsImage },
+						{ categorySlug: "register", src: RegistrationImage },
 					].map(({ categorySlug, src }) => (
 						<CategoryBox key={categorySlug} categorySlug={categorySlug} src={src} />
 					))}

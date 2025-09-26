@@ -16,8 +16,8 @@ const sections = [
 				href: "/category/tickets",
 			},
 			{
-				label: "Seasonal",
-				href: "/category/seasonal",
+				label: "Register",
+				href: "/category/register",
 			},
 		],
 	},

@@ -18,7 +18,7 @@ export const Banner = () => {
 							🎉 Buy tickets for our next tournament! 🎉
 						</p>
 						<YnsLink
-							href="/category/seasonal"
+							href="/category/register"
 							className="lg:flex-none md:flex-none sm:flex-auto sm:text-pretty rounded-full bg-amber-300 px-3 py-1 text-sm font-semibold text-teal-900 shadow-sm hover:bg-amber-500 text-center"
 							// className="flex-none rounded-full bg-indigo-500 px-3 py-1 text-sm font-semibold text-white shadow-sm hover:bg-indigo-600"
 						>

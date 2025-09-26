@@ -12,7 +12,7 @@ const links = [
 	// },
 	{
 		label: "Register",
-		href: "https://example.com",
+		href: "https://warmachine.longshanks.org/event/28908/",
 	},
 	{
 		label: "Tickets",
@@ -21,10 +21,6 @@ const links = [
 	{
 		label: "Contact",
 		href: "/contact",
-	},
-	{
-		label: "Hotels",
-		href: "/hotels",
 	},
 	{
 		label: "More info",
