@@ -23,7 +23,7 @@ const links = [
 		href: "/contact",
 	},
 	{
-		label: "More info",
+		label: "Information",
 		href: "/info",
 	},
 ];
