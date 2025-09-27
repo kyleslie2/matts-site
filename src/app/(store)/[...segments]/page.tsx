@@ -86,21 +86,39 @@ Pending
 # Hotels
 Hotel info .....
 `},
-	"/info": {
-			content: `
-	# More info
- 
-	<iframe
-		src="https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing&embedded=true"
-		width="800"
-		height="1000"
-		frameBorder={0}
-		marginHeight={0}
-		marginWidth={0}
-	>
-		Loading…
-	</iframe>
-`},
+"/info": {
+    content: `
+# More info
+
+<div style={{
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "100%",
+  minHeight: "80vh",
+  background: "#fff",
+  borderRadius: "1rem",
+  boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
+  padding: "1rem"
+}}>
+  <iframe
+    src="https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing&embedded=true"
+    style={{
+      width: "100%",
+      maxWidth: "100%",
+      height: "80vh",
+      border: "none",
+      borderRadius: "0.5rem",
+      background: "#fff"
+    }}
+    allowFullScreen
+    title="More Info"
+  >
+    Loading…
+  </iframe>
+</div>
+`
+},
 };
 
 export default async function Page(props: { params: Promise<{ segments?: string[] }> }) {
@@ -117,8 +135,7 @@ export default async function Page(props: { params: Promise<{ segments?: string[
 	}
 
 	return (
-		<div className="prose pb-8 pt-4 lg:prose-lg xl:prose-xl">
-			<MDXRemote
+		<div className="prose pb-8 pt-4 lg:prose-lg xl:prose-xl w-full max-w-none" style={{ paddingLeft: 0, paddingRight: 0 }}>			<MDXRemote
 				source={page.content}
 				components={{
 					a: (props) => <Link {...(props as LinkProps)} />,
