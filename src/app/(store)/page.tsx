@@ -10,6 +10,8 @@ import { YnsLink } from "@/ui/yns-link";
 // import * as Commerce from "commerce-kit";
 import Image from "next/image";
 import type { Metadata } from "next/types";
+import Link from "next/link";
+
 
 export const metadata = {
 	alternates: { canonical: publicUrl },
@@ -22,44 +24,37 @@ export default async function Home() {
 	return (
 		<main>
 			<section className="rounded bg-red-900 pt-8">
-				<div className="mx-auto grid grid-cols-1 items-center justify-items-center gap-8 px-8 sm:px-16 md:grid-cols-1">
+				<div className="mx-auto grid grid-cols-1 items-center justify-items-center gap-8 px-4 sm:px-8 md:grid-cols-1">
 					<Image
-						alt="Tournament poster"
-						loading="eager"
-						priority={true}
-						className="rounded"
-						height={1450}
-						width={1450}
-						// src="https://res.cloudinary.com/kyleslie2/image/upload/v1758752679/Maple_Melee_Logo_lripoy.png"
-						src={Logo}
-						style={{
-							objectFit: "cover",
-							paddingBottom: "2rem",
-						}}
-						sizes="(max-width: 1200px) 90vw, 950px"
+					alt="Tournament poster"
+					loading="eager"
+					priority={true}
+					className="rounded"
+					height={1450}
+					width={1450}
+					src={Logo}
+					style={{
+						objectFit: "cover",
+						paddingBottom: "0",
+					}}
+					sizes="(max-width: 1200px) 90vw, 950px"
 					/>
-					<div className="max-w-md space-y-4">
-						{/* <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl text-amber-100">{t("hero.title")}</h2> */}
-						{/* <p className="text-pretty text-amber-100">{t("hero.description")}</p> */}
-						<YnsLink
-							className="inline-flex h-10 items-center justify-center rounded-full bg-amber-300 px-6 font-medium text-gray-700 transition-colors hover:bg-amber-500/90 focus:outline-none focus:ring-1 focus:ring-amber-650"
-							href={t("hero.link")}
-						>
-							{t("hero.action")}
-						</YnsLink>
-					</div>
-					<div className="max-w-md space-y-4">
-						{/* <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl text-amber-100">{t("hero.title")}</h2> */}
-						{/* <p className="text-pretty text-amber-100">{t("hero.description")}</p> */}
-						<YnsLink
-							className="inline-flex h-10 items-center justify-center rounded-full bg-amber-300 px-6 font-medium text-gray-700 transition-colors hover:bg-amber-500/90 focus:outline-none focus:ring-1 focus:ring-amber-650"
-							href={t("hero.link2")}
-						>
-							{t("hero.action2")}
-						</YnsLink>
+					<div className="flex flex-row gap-6 w-full justify-center pb-6 pt-0">
+					<YnsLink
+						className="inline-flex h-10 items-center justify-center rounded-full bg-amber-300 px-6 font-medium text-gray-700 transition-colors hover:bg-amber-500/90 focus:outline-none focus:ring-1 focus:ring-amber-650"
+						href={t("hero.link")}
+					>
+						{t("hero.action")}
+					</YnsLink>
+					<YnsLink
+						className="inline-flex h-10 items-center justify-center rounded-full bg-amber-300 px-6 font-medium text-gray-700 transition-colors hover:bg-amber-500/90 focus:outline-none focus:ring-1 focus:ring-amber-650"
+						href={t("hero.link2")}
+					>
+						{t("hero.action2")}
+					</YnsLink>
 					</div>
 				</div>
-			</section>
+				</section>
 
 			{/* <ProductList products={products} /> */}
 
@@ -78,14 +73,19 @@ export default async function Home() {
 					</div>
 					<div className="w-full">
 						<div className="flex flex-col items-center justify-center text-center h-full w-full">
-							<h3 className="text-4xl font-semibold mb-4">January 17-18, 2026</h3>
-							<h4 className="text-3xl font-semibold mb-4">1700 Blair Rd, Gloucester, ON K1B 4E6</h4>
+							<h2 className="text-4xl font-semibold mb-4">Maple Melee</h2>
 							<p>We’re excited to announce our inaugural Maple Melee warmachine event happening Saturday Jan 17th through Sunday January 18th 2026! Saturday will consist of 100 point Steamroller pods that will cut to a Top 8 on Sunday. Sunday will host the Finals as well as a separate steamroller and alternative event for those not playing in the Finals. We will cap at 32 players.</p>
-							<h5 className="text-2xl font-semibold mb-4">More info</h5>
-							<p>
-								For more details please see our tournament pack via the google link below:
-							</p>
-							<a href="https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing">Google doc</a>
+							<h3 className="text-2xl font-semibold mb-4 pt-6">Address</h3>
+							<p>1700 Blair Rd, Gloucester, ON K1B 4E6</p>
+							<h3 className="text-2xl font-semibold mb-4 pt-6">More information</h3>
+							{/* <p>For more details please see our tournament pack <a href="/info">HERE</a></p> */}
+						<Link
+						href={"/info"}
+						className="group inline-flex h-8 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors border-2 border-red-700 hover:bg-red-800 hover:text-amber-100 focus:bg-red-700 focus:text-amber-100 focus:outline-none"
+						>
+						{"For more details please see our tournament pack"}
+						</Link>
+
 						</div>
 					</div>
 				</div>
@@ -94,11 +94,10 @@ export default async function Home() {
 			<section className="w-full py-8">
 				<div className="grid gap-8 lg:grid-cols-2">
 					{[
-						// { categorySlug: "originals", src: OriginalsImage },
-						{ categorySlug: "sign-up", src: TicketsImage },
-						{ categorySlug: "register", src: RegistrationImage },
-					].map(({ categorySlug, src }) => (
-						<CategoryBox key={categorySlug} categorySlug={categorySlug} src={src} />
+						{ displayName: "Buy tickets", categorySlug: "/product/tickets", src: TicketsImage },
+						{ displayName: "Registration", categorySlug: "https://warmachine.longshanks.org/event/28908/", src: RegistrationImage },
+					].map(({ displayName, categorySlug, src }) => (
+						<CategoryBox displayName={displayName} categorySlug={categorySlug} src={src} />
 					))}
 				</div>
 			</section>

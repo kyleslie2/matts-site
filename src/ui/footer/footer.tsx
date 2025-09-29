@@ -5,12 +5,8 @@ import { YnsLink } from "@/ui/yns-link";
 
 const sections = [
 	{
-		header: "Other information",
+		header: "Important links",
 		links: [
-			// {
-			// 	label: "Originals",
-			// 	href: "/category/originals",
-			// },
 			{
 				label: "Tickets",
 				href: "/category/tickets",
@@ -19,18 +15,22 @@ const sections = [
 				label: "Register",
 				href: "https://warmachine.longshanks.org/event/28908/",
 			},
+			{
+				label: "Tournament pack",
+				href: "https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing",
+			},
 		],
 	},
 	{
 		header: "Connect with us",
 		links: [
 			{
-				label: "More Information",
-				href: "https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing",
-			},
-			{
 				label: "Facebook",
 				href: "https://www.facebook.com/groups/OGwarmachineclub",
+			},
+			{
+				label: "Discord",
+				href: "https://discord.gg/dWFWWqGa",
 			},
 			{
 				label: "Email",

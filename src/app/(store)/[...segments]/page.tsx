@@ -88,7 +88,7 @@ Hotel info .....
 `},
 "/info": {
     content: `
-# More info
+# Information
 
 <div style={{
   display: "flex",

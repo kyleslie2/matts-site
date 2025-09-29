@@ -22,7 +22,7 @@ export const Banner = () => {
 							className="lg:flex-none md:flex-none sm:flex-auto sm:text-pretty rounded-full bg-amber-300 px-3 py-1 text-sm font-semibold text-red-900 shadow-sm hover:bg-amber-500 text-center"
 							// className="flex-none rounded-full bg-indigo-500 px-3 py-1 text-sm font-semibold text-white shadow-sm hover:bg-indigo-600"
 						>
-							Information!
+							Info
 						</YnsLink>
 					</div>
 				</div>
