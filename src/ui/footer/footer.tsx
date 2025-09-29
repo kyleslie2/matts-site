@@ -17,7 +17,7 @@ const sections = [
 			},
 			{
 				label: "Register",
-				href: "/category/register",
+				href: "https://warmachine.longshanks.org/event/28908/",
 			},
 		],
 	},

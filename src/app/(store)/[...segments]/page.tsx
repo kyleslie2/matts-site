@@ -16,7 +16,7 @@ Pending
 		content: `
 # Contact
 <div>
-  <ul className="space-y-2 text-teal-900 list-none pl-0">
+  <ul className="space-y-2 text-red-900 list-none pl-0">
 	<li>
 	  <a
 		href="mailto:mhoule99@gmail.com"

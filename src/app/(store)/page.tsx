@@ -21,8 +21,8 @@ export default async function Home() {
 
 	return (
 		<main>
-			<section className="rounded bg-teal-900 pt-8">
-				<div className="mx-auto grid grid-cols-1 items-center justify-items-center gap-8 px-8 sm:px-16 md:grid-cols-2">
+			<section className="rounded bg-red-900 pt-8">
+				<div className="mx-auto grid grid-cols-1 items-center justify-items-center gap-8 px-8 sm:px-16 md:grid-cols-1">
 					<Image
 						alt="Tournament poster"
 						loading="eager"
@@ -39,13 +39,23 @@ export default async function Home() {
 						sizes="(max-width: 1200px) 90vw, 950px"
 					/>
 					<div className="max-w-md space-y-4">
-						<h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl text-amber-100">{t("hero.title")}</h2>
-						<p className="text-pretty text-amber-100">{t("hero.description")}</p>
+						{/* <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl text-amber-100">{t("hero.title")}</h2> */}
+						{/* <p className="text-pretty text-amber-100">{t("hero.description")}</p> */}
 						<YnsLink
-							className="inline-flex h-10 items-center justify-center rounded-full bg-amber-300 px-6 font-medium text-teal-900 transition-colors hover:bg-amber-500/90 focus:outline-none focus:ring-1 focus:ring-amber-650"
+							className="inline-flex h-10 items-center justify-center rounded-full bg-amber-300 px-6 font-medium text-gray-700 transition-colors hover:bg-amber-500/90 focus:outline-none focus:ring-1 focus:ring-amber-650"
 							href={t("hero.link")}
 						>
 							{t("hero.action")}
+						</YnsLink>
+					</div>
+					<div className="max-w-md space-y-4">
+						{/* <h2 className="text-balance text-3xl font-bold tracking-tight md:text-4xl text-amber-100">{t("hero.title")}</h2> */}
+						{/* <p className="text-pretty text-amber-100">{t("hero.description")}</p> */}
+						<YnsLink
+							className="inline-flex h-10 items-center justify-center rounded-full bg-amber-300 px-6 font-medium text-gray-700 transition-colors hover:bg-amber-500/90 focus:outline-none focus:ring-1 focus:ring-amber-650"
+							href={t("hero.link2")}
+						>
+							{t("hero.action2")}
 						</YnsLink>
 					</div>
 				</div>

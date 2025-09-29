@@ -208,7 +208,7 @@ export default async function SingleProductPage(props: {
 														href={`/product/${variant.metadata.slug}?variant=${variant.metadata.variant}`}
 														className={cn(
 															"flex cursor-pointer items-center justify-center gap-2 rounded-md border p-2 transition-colors hover:bg-neutral-100",
-															isSelected && "border-teal-700 bg-neutral-50 font-medium",
+															isSelected && "border-red-900 bg-neutral-50 font-medium",
 															// isSelected && "border-black bg-neutral-500 font-medium",
 														)}
 														aria-selected={isSelected}

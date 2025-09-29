@@ -52,7 +52,7 @@ export const NavMenu = () => {
 						<li key={link.href}>
 							<Link
 								href={link.href}
-								className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-teal-700 hover:text-amber-100 focus:bg-teal-700 focus:text-amber-100 focus:outline-none"
+								className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-red-700 hover:text-amber-100 focus:bg-red-700 focus:text-amber-100 focus:outline-none"
 								// className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none"
 							>
 								{link.label}

@@ -5,7 +5,6 @@ import type { MetadataRoute } from "next";
 const Categories = [
 	// { name: "Orignals", slug: "originals" },
 	{ name: "Tickets", slug: "tickets" },
-	{ name: "Seasonal", slug: "seasonal" },
 ];
 
 type Item = MetadataRoute.Sitemap[number];
