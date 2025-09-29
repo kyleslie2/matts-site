@@ -94,7 +94,7 @@ export default async function Home() {
 			<section className="w-full py-8">
 				<div className="grid gap-8 lg:grid-cols-2">
 					{[
-						{ displayName: "Buy tickets", categorySlug: "/product/tickets", src: TicketsImage },
+						{ displayName: "Buy tickets", categorySlug: "/product/weekend-pass", src: TicketsImage },
 						{ displayName: "Registration", categorySlug: "https://warmachine.longshanks.org/event/28908/", src: RegistrationImage },
 					].map(({ displayName, categorySlug, src }) => (
 						<CategoryBox displayName={displayName} categorySlug={categorySlug} src={src} />
