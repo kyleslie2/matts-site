@@ -93,7 +93,7 @@
 	"/cart.empty.continueShoppingButton": "Continue shopping",
 	"/order.metadata.title": "Order Confirmation · Maple Melee",
 	"/order.page.title": "Order Confirmation",
-	"/order.page.description": "Thank you! You'll find the details of your order below. I will be in touch via email.",
+	"/order.page.description": "Thank you! Purchasing this pass covers the entry fees for all tournaments held over the weekend. However, purchasing this does not register you. Be sure to register on Longshanks by using the `Register` button above.",
 	"/order.page.orderNumberTitle": "Order number",
 	"/order.page.productsTitle": "Products in this order",
 	"/order.page.price": "Price",
