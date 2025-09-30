@@ -10,25 +10,25 @@ export const Banner = () => {
 	if (!isOpen) return null;
 
 	return (
-		<div className="bg-gradient-to-r from-teal-700 via-teal-800 to-teal-900 px-4 py-3 text-amber-100">
+		<div className="bg-gradient-to-r from-red-700 via-red-800 to-red-900 px-4 py-3 text-amber-100">
 			<div className="flex items-center justify-between gap-x-4">
 				<div className="mx-auto flex max-w-7xl items-center justify-between gap-x-4">
 					<div className="flex items-center gap-x-4">
 						<p className="text-center text-sm font-medium">
-							🎉 Buy tickets for our next tournament! 🎉
+							All the information you need for the tournament 👉 
 						</p>
 						<YnsLink
-							href="/category/seasonal"
-							className="lg:flex-none md:flex-none sm:flex-auto sm:text-pretty rounded-full bg-amber-300 px-3 py-1 text-sm font-semibold text-teal-900 shadow-sm hover:bg-amber-500 text-center"
+							href="/info"
+							className="lg:flex-none md:flex-none sm:flex-auto sm:text-pretty rounded-full bg-amber-300 px-3 py-1 text-sm font-semibold text-red-900 shadow-sm hover:bg-amber-500 text-center"
 							// className="flex-none rounded-full bg-indigo-500 px-3 py-1 text-sm font-semibold text-white shadow-sm hover:bg-indigo-600"
 						>
-							Buy tickets!
+							Info
 						</YnsLink>
 					</div>
 				</div>
 				<button
 					onClick={() => setIsOpen(false)}
-					className="flex-none rounded-full justify-self-end bg-amber-300 p-1 text-teal-900 shadow-sm hover:bg-amber-500"
+					className="flex-none rounded-full justify-self-end bg-amber-300 p-1 text-red-900 shadow-sm hover:bg-amber-500"
 					aria-label="Close banner"
 				>
 					<X size={12} />

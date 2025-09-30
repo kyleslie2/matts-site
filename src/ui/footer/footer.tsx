@@ -5,36 +5,36 @@ import { YnsLink } from "@/ui/yns-link";
 
 const sections = [
 	{
-		header: "Art you can buy",
+		header: "Important links",
 		links: [
-			// {
-			// 	label: "Originals",
-			// 	href: "/category/originals",
-			// },
 			{
-				label: "Prints",
-				href: "/category/prints",
+				label: "Tickets",
+				href: "/category/tickets",
 			},
 			{
-				label: "Seasonal",
-				href: "/category/seasonal",
+				label: "Register",
+				href: "https://warmachine.longshanks.org/event/28908/",
+			},
+			{
+				label: "Tournament pack",
+				href: "https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing",
 			},
 		],
 	},
 	{
-		header: "Connect with me",
+		header: "Connect with us",
 		links: [
 			{
-				label: "Instagram",
-				href: "https://instagram.com/aliciahofland.art",
+				label: "Facebook",
+				href: "https://www.facebook.com/groups/OGwarmachineclub",
 			},
 			{
-				label: "Facebook",
-				href: "https://facebook.com/aliciahofland.art",
+				label: "Discord",
+				href: "https://discord.gg/dWFWWqGa",
 			},
 			{
 				label: "Email",
-				href: "mailto:aliciahofland@gmail.com",
+				href: "mailto:mhoule99@gmail.com",
 			},
 		],
 	},
@@ -77,7 +77,7 @@ export async function Footer() {
 			</div>
 			<div className="container mt-8 flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-neutral-500 md:flex-row">
 				<div>
-					<p>© 2024 Matt Houle</p>
+					<p>© 2025 Matt Houle</p>
 					<p>Site built by Kyle Leslie</p>
 				</div>
 				<div className="flex items-center gap-4">
