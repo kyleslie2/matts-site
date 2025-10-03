@@ -59,7 +59,7 @@ Pending
 	</li>
 	<li>
 		<a
-			href="https://discord.gg/dWFWWqGa"
+			href="https://discord.gg/Eec9cGgEfg"
 			target="_blank"
 			rel="noopener noreferrer"
 			className="flex items-center gap-2 underline underline-offset-4 hover:text-amber-600"
@@ -89,6 +89,14 @@ Hotel info .....
 "/info": {
     content: `
 # Information
+
+<a
+href={"https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing&embedded=true"}
+className="group inline-flex h-8 w-max items-center justify-center rounded-md bg-transparent px-4 py-4 text-md font-medium transition-colors border-2 border-blue-700 hover:bg-blue-800 hover:text-amber-100 focus:bg-blue-700 focus:text-amber-100 focus:outline-none mb-4 no-underline"
+>
+{"External link to Google Doc"}
+</a>
+
 
 <div style={{
   display: "flex",
