@@ -30,7 +30,7 @@ const sections = [
 			},
 			{
 				label: "Discord",
-				href: "https://discord.gg/dWFWWqGa",
+				href: "https://discord.gg/Eec9cGgEfg",
 			},
 			{
 				label: "Email",

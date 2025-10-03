@@ -3,7 +3,7 @@ import { getTranslations } from "@/i18n/server";
 // import OriginalsImage from "@/images/originals.jpg";
 import TicketsImage from "@/images/weekend.jpg";
 import RegistrationImage from "@/images/registration.png";
-import Logo from "@/images/MapleMeleeLogo.svg";
+// import Logo from "@/images/MapleMeleeLogo.svg";
 import { CategoryBox } from "@/ui/category-box";
 // import { ProductList } from "@/ui/products/product-list";
 import { YnsLink } from "@/ui/yns-link";
@@ -32,7 +32,7 @@ export default async function Home() {
 					className="rounded"
 					height={1450}
 					width={1450}
-					src={Logo}
+					src={"https://res.cloudinary.com/kyleslie2/image/upload/v1759458740/Maple_Melee_Logo_Huge_r9e9o6.png"}
 					style={{
 						objectFit: "cover",
 						paddingBottom: "0",
