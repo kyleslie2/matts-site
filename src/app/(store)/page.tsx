@@ -2,7 +2,7 @@ import { publicUrl } from "@/env.mjs";
 import { getTranslations } from "@/i18n/server";
 // import OriginalsImage from "@/images/originals.jpg";
 import TicketsImage from "@/images/weekend.jpg";
-import RegistrationImage from "@/images/registration.png";
+import RegistrationImage from "@/images/longshanks.png";
 // import Logo from "@/images/MapleMeleeLogo.svg";
 import { CategoryBox } from "@/ui/category-box";
 // import { ProductList } from "@/ui/products/product-list";
