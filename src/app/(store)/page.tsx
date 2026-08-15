@@ -1,5 +1,4 @@
 import { publicUrl } from "@/env.mjs";
-import { getTranslations } from "@/i18n/server";
 import TicketsImage from "@/images/weekend.jpg";
 import RegistrationImage from "@/images/longshanks.png";
 import content, { siteTheme } from "@/lib/site-content";
@@ -14,8 +13,6 @@ export const metadata = {
 } satisfies Metadata;
 
 export default async function Home() {
-	const t = await getTranslations("/");
-
 	return (
 		<main>
 			<section className={`rounded ${siteTheme.hero.background.value} pt-8`}>
@@ -37,15 +34,15 @@ export default async function Home() {
 					<div className="flex flex-row gap-6 w-full justify-center pb-6 pt-0">
 						<YnsLink
 							className={`inline-flex h-10 items-center justify-center rounded-full ${siteTheme.hero.buttonBackground.value} px-6 font-medium ${siteTheme.hero.buttonText.value} transition-colors ${siteTheme.hero.buttonHover.value} focus:outline-none focus:ring-1`}
-							href={t("hero.link")}
+							href={content.tickets.productPath.value}
 						>
-							{t("hero.action")}
+							{content.tickets.cardTitle.value}
 						</YnsLink>
 						<YnsLink
 							className={`inline-flex h-10 items-center justify-center rounded-full ${siteTheme.hero.buttonBackground.value} px-6 font-medium ${siteTheme.hero.buttonText.value} transition-colors ${siteTheme.hero.buttonHover.value} focus:outline-none focus:ring-1`}
-							href={t("hero.link2")}
+							href={content.register.url.value}
 						>
-							{t("hero.action2")}
+							{content.register.label.value}
 						</YnsLink>
 					</div>
 				</div>
@@ -66,16 +63,16 @@ export default async function Home() {
 					</div>
 					<div className="w-full">
 						<div className="flex flex-col items-center justify-center text-center h-full w-full">
-							<h2 className="text-4xl font-semibold mb-4">Maple Melee</h2>
-							<p>We’re excited to announce our second annual Maple Melee Warmachine event happening Saturday Februay 20th - Sunday February 21st! Expect 6 rounds of the finest Waramchine to be found anywhere in the National Capital Region. This will be an IGQ event that cuts to a top 8 on the Sunday.</p>
-							<h3 className="text-2xl font-semibold mb-4 pt-6">Address</h3>
-							<p>1700 Blair Rd, Gloucester, ON K1B 4E6</p>
-							<h3 className="text-2xl font-semibold mb-4 pt-6">More information</h3>
+							<h2 className="text-4xl font-semibold mb-4">{content.eventTitle.value}</h2>
+							<p>{content.blurb.value}</p>
+							<h3 className="text-2xl font-semibold mb-4 pt-6">{content.homepage.addressTitle.value}</h3>
+							<p>{content.address.value}</p>
+							<h3 className="text-2xl font-semibold mb-4 pt-6">{content.homepage.moreInfoTitle.value}</h3>
 							<Link
-								href="/info"
+								href={content.homepage.moreInfoLinkHref.value}
 								className={`group inline-flex h-8 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors border-2 ${siteTheme.hero.accent.value} ${siteTheme.hero.accentHover.value}`}
 							>
-								{"For more details please see our tournament pack"}
+								{content.homepage.moreInfoLinkLabel.value}
 							</Link>
 						</div>
 					</div>
@@ -85,8 +82,8 @@ export default async function Home() {
 			<section className="w-full py-8">
 				<div className="grid gap-8 lg:grid-cols-2">
 					{[
-						{ displayName: "Maple Melee Weekend Pass 2027", categorySlug: "/product/weekend-pass", src: TicketsImage },
-						{ displayName: "Register", categorySlug: "https://warmachine.longshanks.org/event/37266/", src: RegistrationImage },
+						{ displayName: content.tickets.cardTitle.value, categorySlug: content.tickets.productPath.value, src: TicketsImage },
+						{ displayName: content.register.label.value, categorySlug: content.register.url.value, src: RegistrationImage },
 					].map(({ displayName, categorySlug, src }) => (
 						<CategoryBox displayName={displayName} categorySlug={categorySlug} src={src} />
 					))}
