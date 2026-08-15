@@ -268,5 +268,35 @@
         "description": "Footer heading text color"
       }
     }
+  },
+  "homepage": {
+    "moreInfoTitle": {
+      "value": "More information",
+      "description": "Section heading for the event information block on the homepage"
+    },
+    "moreInfoLinkLabel": {
+      "value": "For more details please see our tournament pack",
+      "description": "Text for the homepage information CTA"
+    },
+    "moreInfoLinkHref": {
+      "value": "/info",
+      "description": "Destination for the homepage information link"
+    },
+    "addressTitle": {
+      "value": "Address",
+      "description": "Section heading for the event address block"
+    },
+    "bannerText": {
+      "value": "All the information you need for the tournament 👉",
+      "description": "Banner headline text above the info CTA"
+    },
+    "bannerButtonLabel": {
+      "value": "Info",
+      "description": "Button text inside the announcement banner"
+    },
+    "bannerButtonHref": {
+      "value": "/info",
+      "description": "URL used by the banner info button"
+    }
   }
 }
