@@ -1,5 +1,8 @@
 import { NavMobileMenu } from "@/ui/nav/nav-mobile-menu.client";
 import Link from "next/link";
+import getSiteContent from "@/lib/site-content";
+
+const content = getSiteContent;
 
 const links = [
 	// {
@@ -11,12 +14,12 @@ const links = [
 	// 	href: "/category/originals",
 	// },
 	{
-		label: "Register",
-		href: "https://warmachine.longshanks.org/event/28908/",
+		label: content.register.label.value,
+		href: content.register.url.value,
 	},
 	{
-		label: "Tickets",
-		href: "/product/weekend-pass",
+		label: content.tickets.cardTitle.value,
+		href: content.tickets.productPath.value,
 	},
 	{
 		label: "Contact",

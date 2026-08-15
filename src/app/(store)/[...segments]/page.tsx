@@ -91,34 +91,16 @@ Hotel info .....
 # Information
 
 <a
-href={"https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing&embedded=true"}
+href="https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing&embedded=true"
 className="group inline-flex h-8 w-max items-center justify-center rounded-md bg-transparent px-4 py-4 text-md font-medium transition-colors border-2 border-blue-700 hover:bg-blue-800 hover:text-amber-100 focus:bg-blue-700 focus:text-amber-100 focus:outline-none mb-4 no-underline"
 >
-{"External link to Google Doc"}
+External link to Google Doc
 </a>
 
-
-<div style={{
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  width: "100%",
-  minHeight: "80vh",
-  background: "#fff",
-  borderRadius: "1rem",
-  boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
-  padding: "1rem"
-}}>
+<div className="w-full h-screen bg-white rounded-lg shadow-sm p-4">
   <iframe
     src="https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing&embedded=true"
-    style={{
-      width: "100%",
-      maxWidth: "100%",
-      height: "80vh",
-      border: "none",
-      borderRadius: "0.5rem",
-      background: "#fff"
-    }}
+    className="w-full h-full border-none rounded"
     allowFullScreen
     title="More Info"
   >
@@ -143,12 +125,16 @@ export default async function Page(props: { params: Promise<{ segments?: string[
 	}
 
 	return (
-		<div className="prose pb-8 pt-4 lg:prose-lg xl:prose-xl w-full max-w-none" style={{ paddingLeft: 0, paddingRight: 0 }}>			<MDXRemote
-				source={page.content}
-				components={{
-					a: (props) => <Link {...(props as LinkProps)} />,
-				}}
-			/>
+		<div className="pb-8 pt-4 w-full">
+			<div className="w-full">
+				<MDXRemote
+					source={page.content}
+					components={{
+						h1: (props) => <h1 className="text-4xl font-bold mb-6" {...props} />,
+						a: (props) => <Link {...(props as LinkProps)} />,
+					}}
+				/>
+			</div>
 		</div>
 	);
 }
