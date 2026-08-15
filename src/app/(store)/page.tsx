@@ -11,6 +11,7 @@ import { YnsLink } from "@/ui/yns-link";
 import Image from "next/image";
 import type { Metadata } from "next/types";
 import Link from "next/link";
+import getSiteContent from "@/lib/site-content";
 
 
 export const metadata = {
@@ -20,6 +21,7 @@ export const metadata = {
 export default async function Home() {
 	// const products = await Commerce.productBrowse({ first: 6 });
 	const t = await getTranslations("/");
+	const content = getSiteContent;
 
 	return (
 		<main>
@@ -32,7 +34,7 @@ export default async function Home() {
 					className="rounded"
 					height={1450}
 					width={1450}
-					src={"https://res.cloudinary.com/kyleslie2/image/upload/v1759458740/Maple_Melee_Logo_Huge_r9e9o6.png"}
+					src={content.heroImage.url}
 					style={{
 						objectFit: "cover",
 						paddingBottom: "0",
@@ -42,15 +44,15 @@ export default async function Home() {
 					<div className="flex flex-row gap-6 w-full justify-center pb-6 pt-0">
 					<YnsLink
 						className="inline-flex h-10 items-center justify-center rounded-full bg-amber-300 px-6 font-medium text-gray-700 transition-colors hover:bg-amber-500/90 focus:outline-none focus:ring-1 focus:ring-amber-650"
-						href={t("hero.link")}
+						href={content.tickets.productPath.value}
 					>
 						{t("hero.action")}
 					</YnsLink>
 					<YnsLink
 						className="inline-flex h-10 items-center justify-center rounded-full bg-amber-300 px-6 font-medium text-gray-700 transition-colors hover:bg-amber-500/90 focus:outline-none focus:ring-1 focus:ring-amber-650"
-						href={t("hero.link2")}
+						href={content.register.url.value}
 					>
-						{t("hero.action2")}
+						{content.register.label.value}
 					</YnsLink>
 					</div>
 				</div>
@@ -73,10 +75,10 @@ export default async function Home() {
 					</div>
 					<div className="w-full">
 						<div className="flex flex-col items-center justify-center text-center h-full w-full">
-							<h2 className="text-4xl font-semibold mb-4">Maple Melee</h2>
-							<p>We’re excited to announce our inaugural Maple Melee warmachine event happening Saturday Jan 17th through Sunday January 18th 2026! Saturday will consist of 100 point Steamroller pods that will cut to a Top 8 on Sunday. Sunday will host the Finals as well as a separate steamroller and alternative event for those not playing in the Finals. We will cap at 32 players.</p>
+							<h2 className="text-4xl font-semibold mb-4">{content.eventTitle.value}</h2>
+							<p>{content.blurb.value}</p>
 							<h3 className="text-2xl font-semibold mb-4 pt-6">Address</h3>
-							<p>1700 Blair Rd, Gloucester, ON K1B 4E6</p>
+							<p>{content.address.value}</p>
 							<h3 className="text-2xl font-semibold mb-4 pt-6">More information</h3>
 							{/* <p>For more details please see our tournament pack <a href="/info">HERE</a></p> */}
 						<Link
@@ -94,8 +96,8 @@ export default async function Home() {
 			<section className="w-full py-8">
 				<div className="grid gap-8 lg:grid-cols-2">
 					{[
-						{ displayName: "Buy tickets", categorySlug: "/product/weekend-pass", src: TicketsImage },
-						{ displayName: "Registration", categorySlug: "https://warmachine.longshanks.org/event/28908/", src: RegistrationImage },
+						{ displayName: content.tickets.cardTitle.value, categorySlug: content.tickets.productPath.value, src: TicketsImage },
+						{ displayName: content.register.label.value, categorySlug: content.register.url.value, src: RegistrationImage },
 					].map(({ displayName, categorySlug, src }) => (
 						<CategoryBox displayName={displayName} categorySlug={categorySlug} src={src} />
 					))}

@@ -1,6 +1,9 @@
 // import { getTranslations } from "@/i18n/server";
 // import { Newsletter } from "@/ui/footer/newsletter.client";
 import { YnsLink } from "@/ui/yns-link";
+import getSiteContent from "@/lib/site-content";
+
+const content = getSiteContent;
 // import type { SVGAttributes } from "react";
 
 const sections = [
@@ -8,12 +11,12 @@ const sections = [
 		header: "Important links",
 		links: [
 			{
-				label: "Tickets",
-				href: "/category/tickets",
+				label: content.tickets.cardTitle.value,
+				href: content.tickets.productPath.value,
 			},
 			{
-				label: "Register",
-				href: "https://warmachine.longshanks.org/event/28908/",
+				label: content.register.label.value,
+				href: content.register.url.value,
 			},
 			{
 				label: "Tournament pack",

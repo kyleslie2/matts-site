@@ -1,0 +1,42 @@
+{
+  "eventTitle": {
+    "value": "Maple Melee",
+    "description": "Main event title shown in the hero and page headings"
+  },
+  "heroImage": {
+    "url": "https://res.cloudinary.com/kyleslie2/image/upload/v1759458740/Maple_Melee_Logo_Huge_r9e9o6.png",
+    "description": "URL for the main hero image shown on the homepage"
+  },
+  "blurb": {
+    "value": "We're excited to announce our second annual Maple Melee Warmachine event happening Saturday Februay 20th - Sunday February 21st! Expect 6 rounds of the finest Waramchine to be found anywhere in the National Capital Region. This will be an IGQ event that cuts to a top 8 on the Sunday.",
+    "description": "Short promotional blurb shown on the homepage about this year's event"
+  },
+  "address": {
+    "value": "1700 Blair Rd, Gloucester, ON K1B 4E6",
+    "description": "Event venue address shown on the info block"
+  },
+  "register": {
+    "label": {
+      "value": "Register",
+      "description": "Label text for the register CTA"
+    },
+    "url": {
+      "value": "https://warmachine.longshanks.org/event/37266/",
+      "description": "External registration link (Longshanks event page)"
+    }
+  },
+  "tickets": {
+    "cardTitle": {
+      "value": "Tickets",
+      "description": "Title used on the tickets card"
+    },
+    "cardDescription": {
+      "value": "A virtual pass giving access to the weekend.",
+      "description": "Short description shown on the tickets card"
+    },
+    "productPath": {
+      "value": "/product/weekend-pass",
+      "description": "Internal product path for the weekend pass ticket purchase"
+    }
+  }
+}
