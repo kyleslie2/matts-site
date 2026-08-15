@@ -27,7 +27,7 @@
   },
   "tickets": {
     "cardTitle": {
-      "value": "Tickets",
+      "value": "Maple Melee Weekend Pass 2027",
       "description": "Title used on the tickets card"
     },
     "cardDescription": {
@@ -37,6 +37,236 @@
     "productPath": {
       "value": "/product/weekend-pass",
       "description": "Internal product path for the weekend pass ticket purchase"
+    }
+  },
+  "navigation": {
+    "menuItems": [
+      {
+        "title": {
+          "value": "Register",
+          "description": "Register menu item title"
+        },
+        "href": {
+          "value": "https://warmachine.longshanks.org/event/37266/",
+          "description": "Register menu item destination"
+        }
+      },
+      {
+        "title": {
+          "value": "Tickets",
+          "description": "Tickets menu item title"
+        },
+        "href": {
+          "value": "/product/weekend-pass",
+          "description": "Tickets menu item destination"
+        }
+      },
+      {
+        "title": {
+          "value": "Contact",
+          "description": "Contact menu item title"
+        },
+        "href": {
+          "value": "/contact",
+          "description": "Contact page destination"
+        }
+      },
+      {
+        "title": {
+          "value": "Information",
+          "description": "Information menu item title"
+        },
+        "href": {
+          "value": "/info",
+          "description": "Information page destination"
+        }
+      }
+    ]
+  },
+  "infoPage": {
+    "title": {
+      "value": "Information",
+      "description": "Page title for the information page"
+    },
+    "googleDocLink": {
+      "value": "https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing",
+      "description": "Google Doc URL used on the info page"
+    },
+    "googleDocLinkLabel": {
+      "value": "External link to Google Doc",
+      "description": "Visible label for the info page Google Doc link"
+    }
+  },
+  "contactPage": {
+    "title": {
+      "value": "Contact",
+      "description": "Page title for the contact page"
+    },
+    "links": [
+      {
+        "title": {
+          "value": "Ask a question",
+          "description": "Email contact link text"
+        },
+        "href": {
+          "value": "mailto:mhoule99@gmail.com",
+          "description": "Email address used for general contact questions"
+        }
+      },
+      {
+        "title": {
+          "value": "OGwarmachineclub's Facebook group",
+          "description": "Facebook group link text"
+        },
+        "href": {
+          "value": "https://www.facebook.com/groups/OGwarmachineclub",
+          "description": "Facebook group URL"
+        }
+      },
+      {
+        "title": {
+          "value": "OGwarmachineclub's Discord",
+          "description": "Discord invitation text"
+        },
+        "href": {
+          "value": "https://discord.gg/Eec9cGgEfg",
+          "description": "Discord invite URL"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "importantLinksTitle": {
+      "value": "Important links",
+      "description": "Header for the important links section in the footer"
+    },
+    "connectTitle": {
+      "value": "Connect with us",
+      "description": "Header for the connect section in the footer"
+    },
+    "links": [
+      {
+        "title": {
+          "value": "Tickets",
+          "description": "Footer tickets link title"
+        },
+        "href": {
+          "value": "/product/weekend-pass",
+          "description": "Footer tickets destination"
+        }
+      },
+      {
+        "title": {
+          "value": "Register",
+          "description": "Footer register link title"
+        },
+        "href": {
+          "value": "https://warmachine.longshanks.org/event/37266/",
+          "description": "Footer registration destination"
+        }
+      },
+      {
+        "title": {
+          "value": "Tournament pack",
+          "description": "Footer Google Doc tournament pack link title"
+        },
+        "href": {
+          "value": "https://docs.google.com/document/d/14-EdaHux7ab67XI4FUG5o9JGW0SaZ3p_vs2PXmKvTf4/edit?usp=sharing",
+          "description": "Google Doc tournament pack URL"
+        }
+      },
+      {
+        "title": {
+          "value": "Facebook",
+          "description": "Footer Facebook link title"
+        },
+        "href": {
+          "value": "https://www.facebook.com/groups/OGwarmachineclub",
+          "description": "Footer Facebook group URL"
+        }
+      },
+      {
+        "title": {
+          "value": "Discord",
+          "description": "Footer Discord link title"
+        },
+        "href": {
+          "value": "https://discord.gg/Eec9cGgEfg",
+          "description": "Footer Discord invite URL"
+        }
+      },
+      {
+        "title": {
+          "value": "Email",
+          "description": "Footer email link title"
+        },
+        "href": {
+          "value": "mailto:mhoule99@gmail.com",
+          "description": "Footer email contact URL"
+        }
+      }
+    ]
+  },
+  "theme": {
+    "page": {
+      "background": {
+        "value": "bg-amber-100",
+        "description": "Main page background color used for the site shell"
+      }
+    },
+    "header": {
+      "background": {
+        "value": "bg-amber-100/90",
+        "description": "Sticky header background color"
+      },
+      "navHover": {
+        "value": "hover:bg-red-700",
+        "description": "Hover background for nav links"
+      },
+      "navFocus": {
+        "value": "focus:bg-red-700",
+        "description": "Focus background for nav links"
+      },
+      "navText": {
+        "value": "hover:text-amber-100 focus:text-amber-100",
+        "description": "Text color state for nav links"
+      }
+    },
+    "hero": {
+      "background": {
+        "value": "bg-red-900",
+        "description": "Primary hero background color"
+      },
+      "accent": {
+        "value": "border-red-700",
+        "description": "Amber/red accent used for bordered CTAs"
+      },
+      "accentHover": {
+        "value": "hover:bg-red-800 hover:text-amber-100 focus:bg-red-700 focus:text-amber-100",
+        "description": "Hover/focus state for border-accent buttons"
+      },
+      "buttonBackground": {
+        "value": "bg-amber-300",
+        "description": "Main CTA button background color"
+      },
+      "buttonText": {
+        "value": "text-gray-700",
+        "description": "Main CTA button text color"
+      },
+      "buttonHover": {
+        "value": "hover:bg-amber-500/90 focus:ring-amber-650",
+        "description": "Hover/focus background for action buttons"
+      }
+    },
+    "footer": {
+      "background": {
+        "value": "bg-amber-50",
+        "description": "Footer background color"
+      },
+      "headingText": {
+        "value": "text-teal-900",
+        "description": "Footer heading text color"
+      }
     }
   }
 }

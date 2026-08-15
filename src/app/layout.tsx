@@ -2,6 +2,7 @@ import "@/app/globals.css";
 import { env, publicUrl } from "@/env.mjs";
 import { IntlClientProvider } from "@/i18n/client";
 import { getLocale, getMessages, getTranslations } from "@/i18n/server";
+import { siteTheme } from "@/lib/site-content";
 import { Toaster } from "@/ui/shadcn/sonner";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -25,7 +26,10 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
 		<html lang={locale} className="h-full antialiased">
 			<body className="flex min-h-full flex-col">
 				<IntlClientProvider messages={messages} locale={locale}>
-					<div className="flex min-h-full flex-1 flex-col bg-amber-100" vaul-drawer-wrapper="">
+					<div
+						className={`flex min-h-full flex-1 flex-col ${siteTheme.page.background.value}`}
+						vaul-drawer-wrapper=""
+					>
 						{children}
 					</div>
 					<Toaster position="top-center" offset={10} />
