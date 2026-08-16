@@ -44,7 +44,7 @@ export async function Footer() {
 			</div>
 			<div className="container mt-8 flex max-w-7xl flex-col items-center justify-between gap-4 text-sm text-neutral-500 md:flex-row">
 				<div>
-					<p>© 2025 Matt Houle</p>
+					<p>© 2026 Matt Houle</p>
 					<p>Site built by Kyle Leslie</p>
 				</div>
 			</div>
