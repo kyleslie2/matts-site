@@ -27,11 +27,11 @@ export async function findOrCreateCartIdFromCookiesAction() {
 	}
 
 	const newCart = await Commerce.cartCreate();
-	setCartCookieJson({
+	await setCartCookieJson({
 		id: newCart.id,
 		linesCount: 0,
 	});
-	revalidateTag(`cart-${newCart.id}`);
+	revalidateTag(`cart-${newCart.id}`, 'tag');
 
 	return newCart.id;
 }
@@ -42,10 +42,10 @@ export async function clearCartCookieAction() {
 		return;
 	}
 
-	clearCartCookie();
-	revalidateTag(`cart-${cookie.id}`);
+	await clearCartCookie();
+	revalidateTag(`cart-${cookie.id}`, 'tag');
 	// FIXME not ideal, revalidate per domain instead (multi-tenant)
-	revalidateTag(`admin-orders`);
+	revalidateTag(`admin-orders`, 'tag');
 }
 
 export async function addToCartAction(formData: FormData) {
@@ -59,12 +59,12 @@ export async function addToCartAction(formData: FormData) {
 	const updatedCart = await Commerce.cartAdd({ productId, cartId: cart?.cart.id });
 
 	if (updatedCart) {
-		setCartCookieJson({
+		await setCartCookieJson({
 			id: updatedCart.id,
 			linesCount: Commerce.cartCount(updatedCart.metadata),
 		});
 
-		revalidateTag(`cart-${updatedCart.id}`);
+		revalidateTag(`cart-${updatedCart.id}`, 'tag');
 	}
 }
 
