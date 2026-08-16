@@ -1,20 +1,20 @@
 import { safeJsonParse } from "@/lib/utils";
-import { type UnsafeUnwrappedCookies, cookies } from "next/headers";
+import { cookies } from "next/headers";
 
 export const CART_COOKIE = "yns_cart";
 
 export type CartCookieJson = { id: string; linesCount: number };
 
-export function setCartCookieJson(cartCookieJson: CartCookieJson): void {
+export async function setCartCookieJson(cartCookieJson: CartCookieJson): Promise<void> {
 	try {
-		(cookies() as unknown as UnsafeUnwrappedCookies).set(CART_COOKIE, JSON.stringify(cartCookieJson));
+		(await cookies()).set(CART_COOKIE, JSON.stringify(cartCookieJson));
 	} catch (error) {
 		console.error("Failed to set cart cookie", error);
 	}
 }
 
-export function clearCartCookie(): void {
-	(cookies() as unknown as UnsafeUnwrappedCookies).set(CART_COOKIE, "", {
+export async function clearCartCookie(): Promise<void> {
+	(await cookies()).set(CART_COOKIE, "", {
 		maxAge: 0,
 	});
 }
@@ -22,7 +22,7 @@ export function clearCartCookie(): void {
 export async function getCartCookieJson(): Promise<null | CartCookieJson> {
 	const cookiesValue = await cookies();
 	const cartCookieJson = safeJsonParse(
-		(cookiesValue as unknown as UnsafeUnwrappedCookies).get(CART_COOKIE)?.value,
+		cookiesValue.get(CART_COOKIE)?.value,
 	);
 
 	if (

@@ -74,11 +74,11 @@ export async function POST(request: Request) {
             metadata: { stock: product.metadata.stock - 1 },
           });
 
-          revalidateTag(`product-${product.id}`);
+          revalidateTag(`product-${product.id}`, 'tag');
         }
       }
 
-      revalidateTag(`cart-${event.data.object.id}`);
+      revalidateTag(`cart-${event.data.object.id}`, 'tag');
 
       break;
 
