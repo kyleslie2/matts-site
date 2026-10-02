@@ -35,7 +35,7 @@
       "description": "Short description shown on the tickets card"
     },
     "productPath": {
-      "value": "/product/weekend-pass",
+      "value": "prod_T99VNK3XcWKr2u",
       "description": "Internal product path for the weekend pass ticket purchase"
     }
   },
