@@ -4,7 +4,7 @@
     "description": "Main event title shown in the hero and page headings"
   },
   "heroImage": {
-    "url": "https://res.cloudinary.com/dbvrfz6k/image/upload/f_auto/q_auto/Maple_Melee_Logo_Huge.png",
+    "url": "https://res.cloudinary.com/dbvrfz6k/image/upload/f_auto/q_auto/Maple_Melee_Logo_Huge_1.png",
     "description": "URL for the main hero image shown on the homepage"
   },
   "blurb": {
