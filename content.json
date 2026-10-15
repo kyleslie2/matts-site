@@ -1,6 +1,6 @@
 {
   "eventTitle": {
-    "value": "Maple Melee!?",
+    "value": "Maple Melee!",
     "description": "Main event title shown in the hero and page headings"
   },
   "heroImage": {
@@ -8,7 +8,7 @@
     "description": "URL for the main hero image shown on the homepage"
   },
   "blurb": {
-    "value": "We're excited to announce our second annual Maple Melee Warmachine event happening Saturday Februay 20th - Sunday February 21st! Expect 6 rounds of the finest Waramchine to be found anywhere in the National Capital Region. This will be an IGQ event that cuts to a top 8 on the Sunday.",
+    "value": "We're excited to announce our second annual Maple Melee Warmachine event happening Saturday Februay 20th - Sunday February 21st! Expect 6 rounds of the finest Warmachine to be found anywhere in the National Capital Region. This will be an IGQ event that cuts to a top 8 on the Sunday.",
     "description": "Short promotional blurb shown on the homepage about this year's event"
   },
   "address": {
