@@ -35,7 +35,7 @@
       "description": "Short description shown on the tickets card"
     },
     "productPath": {
-      "value": "/product/weekend-pass",
+      "value": "/product/2027 Maple Melee",
       "description": "Internal product path for the weekend pass ticket purchase"
     }
   },
