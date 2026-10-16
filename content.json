@@ -35,7 +35,7 @@
       "description": "Short description shown on the tickets card"
     },
     "productPath": {
-      "value": "/product/2027 Maple Melee",
+      "value": "/product/2027-Maple-Melee",
       "description": "Internal product path for the weekend pass ticket purchase"
     }
   },
@@ -57,7 +57,7 @@
           "description": "Tickets menu item title"
         },
         "href": {
-          "value": "/product/2027 Maple Melee",
+          "value": "/product/2027-Maple-Melee",
           "description": "Tickets menu item destination"
         }
       },
@@ -151,7 +151,7 @@
           "description": "Footer tickets link title"
         },
         "href": {
-          "value": "/product/2027 Maple Melee",
+          "value": "/product/2027-Maple-Melee",
           "description": "Footer tickets destination"
         }
       },
