@@ -27,7 +27,7 @@
   },
   "tickets": {
     "cardTitle": {
-      "value": "Weekend Pass",
+      "value": "Purchase Ticket",
       "description": "Title used on the tickets card"
     },
     "cardDescription": {
