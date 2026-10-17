@@ -27,7 +27,7 @@
   },
   "tickets": {
     "cardTitle": {
-      "value": "Maple Melee Weekend Pass 2027",
+      "value": "Weekend Pass",
       "description": "Title used on the tickets card"
     },
     "cardDescription": {
