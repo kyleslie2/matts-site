@@ -31,7 +31,7 @@ export async function findOrCreateCartIdFromCookiesAction() {
 		id: newCart.id,
 		linesCount: 0,
 	});
-	revalidateTag(`cart-${newCart.id}`, 'tag');
+	revalidateTag(`cart-${newCart.id}`, "max");
 
 	return newCart.id;
 }
@@ -43,9 +43,9 @@ export async function clearCartCookieAction() {
 	}
 
 	await clearCartCookie();
-	revalidateTag(`cart-${cookie.id}`, 'tag');
+	revalidateTag(`cart-${cookie.id}`, "max");
 	// FIXME not ideal, revalidate per domain instead (multi-tenant)
-	revalidateTag(`admin-orders`, 'tag');
+	revalidateTag(`admin-orders`, "max");
 }
 
 export async function addToCartAction(formData: FormData) {
@@ -64,7 +64,7 @@ export async function addToCartAction(formData: FormData) {
 			linesCount: Commerce.cartCount(updatedCart.metadata),
 		});
 
-		revalidateTag(`cart-${updatedCart.id}`, 'tag');
+		revalidateTag(`cart-${updatedCart.id}`, "max");
 	}
 }
 
