@@ -1,4 +1,5 @@
 "use client";
+import { addToCartAction } from "@/actions/cart-actions";
 import { useTranslations } from "@/i18n/client";
 import { cn } from "@/lib/utils";
 import { Button } from "@/ui/shadcn/button";
@@ -26,14 +27,20 @@ export const AddToCartButton = ({
 		<Button
 			id="button-add-to-cart"
 			size="lg"
-			type="submit"
+			type="button"
 			className={cn("rounded-full text-lg relative", className)}
-			onClick={async (e) => {
+			onClick={() => {
 				if (isDisabled) {
-					e.preventDefault();
 					return;
 				}
-				startTransition(() => router.push(`/cart-overlay?add=${productId}`));
+
+				const formData = new FormData();
+				formData.append("productId", productId);
+
+				startTransition(async () => {
+					await addToCartAction(formData);
+					router.push("/cart-overlay");
+				});
 			}}
 			aria-disabled={isDisabled}
 		>
